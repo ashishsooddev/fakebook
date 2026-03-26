@@ -67,3 +67,23 @@ textarea {
   margin: 10px 0;
   padding: 10px;
 }
+
+.hidden {
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  top: 0;
+}
+
+.popupBox {
+  background: white;
+  color: black;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+}
