@@ -27,4 +27,13 @@ function buildPostElement(data, username) {
   return wrapper;
 }
 
+function displayPosts(list, container, username) {
+  container.innerHTML = "";
+
+  for (let i = 0; i < list.length; i++) {
+    const element = buildPostElement(list[i], username);
+    container.appendChild(element);
+  }
+}
+
 
