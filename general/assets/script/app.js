@@ -92,3 +92,12 @@ document.getElementById("postAreaForm").addEventListener("submit", async (e) => 
   e.target.reset();
   postButton.disabled = true;
 });
+
+profileIcon.addEventListener("click", () => {
+  showUserInfo(currentAccount, userDetails);
+  popup.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", () => {
+  popup.classList.add("hidden");
+});
