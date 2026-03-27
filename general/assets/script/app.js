@@ -44,3 +44,14 @@ function readFileAsImage(file) {
   });
 }
 
+function showUserInfo(user, box) {
+  const info = user.getInfo();
+
+  box.innerHTML = `
+    <p>Name: ${info.name}</p>
+    <p>Email: ${info.email}</p>
+    <p>Pages: ${info.pages}</p>
+    <p>Groups: ${info.groups}</p>
+  `;
+}
+
