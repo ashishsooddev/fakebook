@@ -55,3 +55,13 @@ function showUserInfo(user, box) {
   `;
 }
 
+const messageBox = document.getElementById("postMessage");
+const fileInput = document.getElementById("uploadImage");
+const postButton = document.getElementById("submitPost");
+const feed = document.getElementById("feedContainer");
+
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closePopup");
+const profileIcon = document.getElementById("profileIcon");
+const userDetails = document.getElementById("userDetails");
+
