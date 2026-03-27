@@ -72,3 +72,23 @@ messageBox.addEventListener("input", () => {
 fileInput.addEventListener("change", () => {
   toggleButtonState(messageBox, fileInput, postButton);
 });
+
+document.getElementById("postAreaForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  let imageData = "";
+
+  if (fileInput.files[0]) {
+    imageData = await readFileAsImage(fileInput.files[0]);
+  }
+  postsData.unshift({
+    text: messageBox.value,
+    img: imageData,
+    date: getToday()
+  });
+
+  displayPosts(postsData, feed, currentAccount.name);
+
+  e.target.reset();
+  postButton.disabled = true;
+});
