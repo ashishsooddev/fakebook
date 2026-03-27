@@ -87,3 +87,27 @@ textarea {
   margin: 100px auto;
   padding: 20px;
 }
+
+/* Fix form layout */
+#postAreaForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fix Post button */
+#submitPost {
+  align-self: flex-end;
+  margin-top: 10px;
+  padding: 6px 14px;
+  background: #2d9cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Disabled state */
+#submitPost:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
