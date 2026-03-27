@@ -65,3 +65,10 @@ const closeBtn = document.getElementById("closePopup");
 const profileIcon = document.getElementById("profileIcon");
 const userDetails = document.getElementById("userDetails");
 
+messageBox.addEventListener("input", () => {
+  toggleButtonState(messageBox, fileInput, postButton);
+});
+
+fileInput.addEventListener("change", () => {
+  toggleButtonState(messageBox, fileInput, postButton);
+});
