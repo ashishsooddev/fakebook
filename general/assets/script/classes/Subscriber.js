@@ -11,3 +11,14 @@ export default class Subscriber extends User {
     this.#groups = groups;
     this.#monetize = monetize;
   }
+    getInfo() {
+    const base = super.getInfo();
+
+    return {
+      ...base,
+      pages: this.#pages,
+      groups: this.#groups,
+      canMonetize: this.#monetize
+    };
+  }
+}
